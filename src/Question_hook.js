@@ -15,7 +15,6 @@ function Question() {
   const [current_question, setCurrentQuestion] = useState(0) // index to current question
   const [cur_option, setCurOption] = useState(-1)
   const next = () => {
-    if(cur_option === -1) return 
     if(current_question<contents.length-1){
       setCurrentQuestion(current_question+1)
       setCurOption(-1)
